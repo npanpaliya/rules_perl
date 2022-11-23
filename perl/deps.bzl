@@ -45,11 +45,31 @@ def perl_register_toolchains():
         ],
     )
 
+    perl_download(
+        name = "perl_linux_ppc64le",
+        strip_prefix = "",
+        sha256 = "92443a176da78a13fb88e1ba579e7ab04ddb0faf16664817e593845c3074f554",
+        urls = [
+            "https://github.com/npanpaliya/relocatable-perl/blob/ppc-port/linux-ppc64le/perl-linux-ppc64le.tar.gz",
+        ],
+    )
+
+    perl_download(
+        name = "perl_linux_s390x",
+        strip_prefix = "perl-5.36.0",
+        sha256 = "0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0",
+        urls = [
+            "https://www.cpan.org/src/5.0/perl-5.36.0.tar.xz",
+        ],
+    )
+
     native.register_toolchains(
         "@rules_perl//:darwin_toolchain",
         "@rules_perl//:linux_arm64_toolchain",
         "@rules_perl//:linux_x86_64_toolchain",
         "@rules_perl//:windows_x86_64_toolchain",
+        "@rules_perl//:linux_ppc64le_toolchain",
+        "@rules_perl//:linux_s390x_toolchain",
     )
 
 def perl_rules_dependencies():
