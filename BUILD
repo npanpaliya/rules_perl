@@ -47,7 +47,7 @@ toolchain_type(
         ("linux", "arm64"),
         ("linux", "x86_64"),
         ("windows", "x86_64"),
-        ("linux", "ppc64le"),
+        ("linux", "ppc"),
         ("linux", "s390x"),
     ]
 ]
