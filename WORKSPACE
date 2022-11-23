@@ -14,7 +14,7 @@ register_toolchains(
     "@rules_perl//:linux_arm64_toolchain",
     "@rules_perl//:linux_x86_64_toolchain",
     "@rules_perl//:windows_x86_64_toolchain",
-    "@rules_perl//:linux_ppc64le_toolchain",
+    "@rules_perl//:linux_ppc_toolchain",
     "@rules_perl//:linux_s390x_toolchain",
 )
 

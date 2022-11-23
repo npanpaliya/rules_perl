@@ -46,7 +46,7 @@ def perl_register_toolchains():
     )
 
     perl_download(
-        name = "perl_linux_ppc64le",
+        name = "perl_linux_ppc",
         strip_prefix = "",
         sha256 = "92443a176da78a13fb88e1ba579e7ab04ddb0faf16664817e593845c3074f554",
         urls = [
@@ -68,7 +68,7 @@ def perl_register_toolchains():
         "@rules_perl//:linux_arm64_toolchain",
         "@rules_perl//:linux_x86_64_toolchain",
         "@rules_perl//:windows_x86_64_toolchain",
-        "@rules_perl//:linux_ppc64le_toolchain",
+        "@rules_perl//:linux_ppc_toolchain",
         "@rules_perl//:linux_s390x_toolchain",
     )
 
