@@ -47,7 +47,7 @@ def perl_register_toolchains():
 
     perl_download(
         name = "perl_linux_ppc",
-        strip_prefix = "",
+        strip_prefix = "d8ea5aed9bc5b533d4086a0298490258bd289a40050f42bae5ba928bb0494f1b",
         sha256 = "d8ea5aed9bc5b533d4086a0298490258bd289a40050f42bae5ba928bb0494f1b",
         urls = [
             "https://github.com/npanpaliya/relocatable-perl/raw/ppc-port/linux-ppc64le/perl-linux-ppc64le.tar.gz",
